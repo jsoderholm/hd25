@@ -6,7 +6,7 @@ import FlowerNav from "./flower-nav"
 
 function FlowerGrid() {
   return (
-    <div className="grid grid-cols-4 col-span-2 gap-8 text-center rounded-md">
+    <div className="grid grid-cols-1 sm:grid-cols-4 col-span-2 gap-8 text-center rounded-md">
       <FlowerNav
         src={osaFlower}
         title="OSA"
@@ -22,13 +22,13 @@ function FlowerGrid() {
       <FlowerNav
         src={boendeFlower}
         title="Boende"
-        href="/accommodation"
+        href="/boende"
         className=" transition-transform duration-300 hover:scale-105"
       />
       <FlowerNav
         src={kontaktFlower}
         title="Kontakt"
-        href="/contact"
+        href="/kontakt"
         className=" transition-transform duration-300 hover:scale-105"
       />
     </div>

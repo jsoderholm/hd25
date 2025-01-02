@@ -1,7 +1,5 @@
 "use client"
 
-import { MainNav } from "@/components/main-nav"
-import { ModeToggle } from "@/components/mode-toggle"
 import { cn } from "@/lib/utils"
 import Link from "next/link"
 import { usePathname } from "next/navigation"
@@ -33,10 +31,10 @@ export function SiteHeader() {
                 "transition-colors hover:text-foreground/80 text-foreground/80",
               )}
             >
-              Viktig Info
+              Viktig Information
             </Link>
             <Link
-              href="/accomodation"
+              href="/boende"
               className={cn(
                 "transition-colors hover:text-foreground/80 text-foreground/80",
               )}
@@ -44,12 +42,20 @@ export function SiteHeader() {
               Boende
             </Link>
             <Link
-              href="/contact"
+              href="/kontakt"
               className={cn(
                 "transition-colors hover:text-foreground/80 text-foreground/80",
               )}
             >
               Kontakt
+            </Link>
+            <Link
+              href="/bildgalleri"
+              className={cn(
+                "transition-colors hover:text-foreground/80 text-foreground/80",
+              )}
+            >
+              Bildgalleri
             </Link>
           </div>
         </div>

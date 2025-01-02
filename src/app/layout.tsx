@@ -1,12 +1,9 @@
 import { siteConfig } from "@/config/site"
-import { fontCormorant, fontSans } from "@/lib/fonts"
-import { fontMono } from "@/lib/fonts"
+import { fontCormorant } from "@/lib/fonts"
 import { cn } from "@/lib/utils"
 import type { Metadata } from "next"
 import "@/styles/globals.css"
-import { SiteFooter } from "@/components/site-footer"
 import { SiteHeader } from "@/components/site-header"
-import { ThemeProvider } from "@/components/theme-provider"
 
 export const metadata: Metadata = {
   title: {
@@ -46,14 +43,12 @@ export default function RootLayout({ children }: RootLayoutProps) {
           fontCormorant.variable,
         )}
       >
-        <ThemeProvider>
-          <div className="relative flex min-h-svh flex-col bg-background">
-            <div className="border-grid flex flex-1 flex-col">
-              <SiteHeader />
-              <main className="flex flex-1 flex-col p-8">{children}</main>
-            </div>
+        <div className="relative flex min-h-svh flex-col bg-background">
+          <div className="border-grid flex flex-1 flex-col">
+            <SiteHeader />
+            <main className="flex flex-1 flex-col p-8">{children}</main>
           </div>
-        </ThemeProvider>
+        </div>
       </body>
     </html>
   )
