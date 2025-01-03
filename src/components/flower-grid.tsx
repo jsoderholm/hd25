@@ -1,12 +1,28 @@
+"use client"
+
+import { useMediaQuery } from "@/hooks/use-media-query"
+import { cn } from "@/lib/utils"
 import kontaktFlower from "../../public/flowers/1.png"
 import osaFlower from "../../public/flowers/2.png"
 import infoFlower from "../../public/flowers/3.png"
 import boendeFlower from "../../public/flowers/4.png"
+import bildgalleriFlower from "../../public/flowers/8.png"
 import FlowerNav from "./flower-nav"
 
-function FlowerGrid() {
+function FlowerGrid({
+  className,
+  ...props
+}: React.HTMLAttributes<HTMLDivElement>) {
+  const isMobile = useMediaQuery("(max-width: 768px)")
+
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-4 col-span-2 gap-8 text-center rounded-md">
+    <div
+      className={cn(
+        "grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 col-span-2 gap-6 sm:gap-8 text-center rounded-md",
+        className,
+      )}
+      {...props}
+    >
       <FlowerNav
         src={osaFlower}
         title="OSA"
@@ -31,6 +47,15 @@ function FlowerGrid() {
         href="/kontakt"
         className=" transition-transform duration-300 hover:scale-105"
       />
+      {isMobile && (
+        <FlowerNav
+          src={bildgalleriFlower}
+          title="Bildgalleri"
+          href="/bildgalleri"
+          className="transition-transform duration-300 hover:scale-105"
+          imgClassName="left-1/2 -translate-x-2/3"
+        />
+      )}
     </div>
   )
 }

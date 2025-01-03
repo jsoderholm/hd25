@@ -3,6 +3,7 @@
 import { cn } from "@/lib/utils"
 import Link from "next/link"
 import { usePathname } from "next/navigation"
+import MobileNav from "./mobile-nav"
 
 export function SiteHeader() {
   const pathname = usePathname()
@@ -12,10 +13,11 @@ export function SiteHeader() {
     <header className="border-grid sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container-wrapper">
         <div className="container flex h-14 items-center justify-between">
-          <Link href="/" className="text-2xl font-medium">
+          <MobileNav />
+          <Link href="/" className="md:block hidden text-2xl font-medium">
             Hanna & David
           </Link>
-          <div className="flex gap-8 items-center text-lg">
+          <div className="gap-8 hidden md:flex items-center text-lg">
             <Link
               href="/osa"
               className={cn(

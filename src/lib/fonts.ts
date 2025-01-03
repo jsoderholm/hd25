@@ -1,9 +1,4 @@
-import { GeistMono } from "geist/font/mono"
-import { GeistSans } from "geist/font/sans"
-import { Cormorant, Cormorant_Garamond } from "next/font/google"
-
-export const fontMono = GeistMono
-export const fontSans = GeistSans
+import { Cormorant_Garamond } from "next/font/google"
 
 export const fontCormorant = Cormorant_Garamond({
   subsets: ["latin"],
