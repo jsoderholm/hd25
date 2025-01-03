@@ -1,6 +1,6 @@
 import BackgroundFlower from "@/components/background-flower"
 import Title from "@/components/title"
-import infoFlower from "../../../public/flowers/3.png"
+import infoFlower from "../../../public/flowers/3.webp"
 
 export default function InfoPage() {
   return (

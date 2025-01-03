@@ -1,6 +1,8 @@
+"use client"
+
 import BackgroundFlower from "@/components/background-flower"
 import Title from "@/components/title"
-import bildgalleriFlower from "../../../public/flowers/8.png"
+import bildgalleriFlower from "../../../public/flowers/8.webp"
 
 export default function BildgalleriPage() {
   return (

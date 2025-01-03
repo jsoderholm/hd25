@@ -32,6 +32,7 @@ function FlowerNav({
           "object-contain h-4/5 absolute inset-x-0 -translate-x-1/4 opacity-60",
           imgClassName,
         )}
+        priority
       />
     </Link>
   )

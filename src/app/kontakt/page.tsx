@@ -1,6 +1,6 @@
 import BackgroundFlower from "@/components/background-flower"
 import Title from "@/components/title"
-import kontaktFlower from "../../../public/flowers/1.png"
+import kontaktFlower from "../../../public/flowers/1.webp"
 
 export default function ContactPage() {
   return (

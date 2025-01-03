@@ -4,6 +4,7 @@ import { cn } from "@/lib/utils"
 import type { Metadata } from "next"
 import "@/styles/globals.css"
 import { SiteHeader } from "@/components/site-header"
+import { Toaster } from "@/components/ui/sonner"
 
 export const metadata: Metadata = {
   title: {
@@ -47,6 +48,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
           <div className="border-grid flex flex-1 flex-col">
             <SiteHeader />
             <main className="flex flex-1 flex-col p-8">{children}</main>
+            <Toaster />
           </div>
         </div>
       </body>

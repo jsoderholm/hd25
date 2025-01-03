@@ -20,6 +20,7 @@ function BackgroundFlower({ src, className, ...props }: BackgroundFlowerProps) {
         isMobile ? "left-1/2 bottom-6 transform -translate-x-1/2 w-2/3" : "",
         className,
       )}
+      priority
       {...props}
     />
   )

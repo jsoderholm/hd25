@@ -17,12 +17,12 @@ export function SiteHeader() {
           <Link href="/" className="md:block hidden text-2xl font-medium">
             Hanna & David
           </Link>
-          <div className="gap-8 hidden md:flex items-center text-lg">
+          <div className="gap-6 hidden md:flex items-center text-lg">
             <Link
               href="/osa"
               className={cn(
-                "text-lg transition-colors hover:text-foreground text-foreground/80",
-                isActive("/osa") && "text-foreground",
+                "text-lg transition-colors hover:text-foreground hover:bg-wedding-green/20 py-1 px-2 rounded-md",
+                isActive("/osa") && "bg-wedding-green/20",
               )}
             >
               OSA
@@ -30,7 +30,8 @@ export function SiteHeader() {
             <Link
               href="/info"
               className={cn(
-                "transition-colors hover:text-foreground/80 text-foreground/80",
+                "text-lg transition-colors hover:bg-wedding-green/20 py-1 px-2 rounded-md",
+                isActive("/info") && "bg-wedding-green/20",
               )}
             >
               Viktig Information
@@ -38,7 +39,8 @@ export function SiteHeader() {
             <Link
               href="/boende"
               className={cn(
-                "transition-colors hover:text-foreground/80 text-foreground/80",
+                "text-lg transition-colors hover:text-foreground hover:bg-wedding-green/20 py-1 px-2 rounded-md",
+                isActive("/boende") && "bg-wedding-green/20",
               )}
             >
               Boende
@@ -46,7 +48,8 @@ export function SiteHeader() {
             <Link
               href="/kontakt"
               className={cn(
-                "transition-colors hover:text-foreground/80 text-foreground/80",
+                "text-lg transition-colors hover:text-foreground hover:bg-wedding-green/20 py-1 px-2 rounded-md",
+                isActive("/kontakt") && "bg-wedding-green/20",
               )}
             >
               Kontakt
@@ -54,7 +57,8 @@ export function SiteHeader() {
             <Link
               href="/bildgalleri"
               className={cn(
-                "transition-colors hover:text-foreground/80 text-foreground/80",
+                "text-lg transition-colors hover:text-foreground hover:bg-wedding-green/20 py-1 px-2 rounded-md",
+                isActive("/bildgalleri") && "bg-wedding-green/20",
               )}
             >
               Bildgalleri

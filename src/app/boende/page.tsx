@@ -1,6 +1,6 @@
 import BackgroundFlower from "@/components/background-flower"
 import Title from "@/components/title"
-import boendeFlower from "../../../public/flowers/4.png"
+import boendeFlower from "../../../public/flowers/4.webp"
 
 export default function AccomodationPage() {
   return (

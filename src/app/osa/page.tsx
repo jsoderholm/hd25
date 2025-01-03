@@ -1,6 +1,6 @@
 import BackgroundFlower from "@/components/background-flower"
 import Title from "@/components/title"
-import osaFlower from "../../../public/flowers/2.png"
+import osaFlower from "../../../public/flowers/2.webp"
 
 export default function OsaPage() {
   return (
@@ -12,16 +12,18 @@ export default function OsaPage() {
           Följ länken nedan till Google-formuläret och svara så noggrant du kan
           på alla frågor.
         </p>
-        <ul className="flex flex-col z-10 gap-2 list-disc text-xl">
+        <ul className="flex flex-col z-10 gap-2 list-disc font-medium text-xl">
           <li>Varje enskild gäst måste fylla i sitt eget OSA-formulär.</li>
-          <li>OSA senast 25 mars.</li>
+          <li>
+            OSA <span className="font-bold">senast 25 mars.</span>
+          </li>
           <li>
             Enbart personer som fått en personlig inbjudan med sitt namn på ska
             OSA.
           </li>
           <li>
-            Alltså, man får inte ta med t.ex en partner om hen inte är
-            skriftligen inbjuden.
+            Alltså, man får <span className="font-bold">inte</span> ta med t.ex
+            en partner om hen inte är skriftligen inbjuden.
           </li>
         </ul>
         <a

@@ -2,16 +2,19 @@ import BackgroundFlower from "@/components/background-flower"
 import FlowerGrid from "@/components/flower-grid"
 import Title from "@/components/title"
 import Image from "next/image"
-import backgroundFlower from "../../public/flowers/5.png"
+import backgroundFlower from "../../public/flowers/5.webp"
 import hd from "../../public/hd1.jpeg"
 import hd2 from "../../public/hd2.jpeg"
 
 export default function Home() {
   return (
-    <div className="container-wrapper">
+    <div className="container-wrapper my-auto">
       <div className="grid container items-center gap-y-6 sm:gap-8 grid-cols-1 lg:grid-cols-2">
-        <BackgroundFlower src={backgroundFlower} />
-        <div className="hidden lg:grid grid-cols-2 gap-8 rounded-md">
+        <BackgroundFlower
+          src={backgroundFlower}
+          className="left-1/2 -bottom-10"
+        />
+        <div className="hidden lg:grid grid-cols-2 z-10 gap-8 rounded-md">
           <div className="rounded-md overflow-hidden aspect-square">
             <Image
               src={hd}
@@ -27,7 +30,7 @@ export default function Home() {
             />
           </div>
         </div>
-        <div className="flex flex-col items-center gap-y-6">
+        <div className="flex flex-col items-center gap-y-6 z-10">
           <Title>
             Hanna & David <br /> 26/7/25
           </Title>
