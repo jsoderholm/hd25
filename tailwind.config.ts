@@ -56,6 +56,12 @@ const config: Config = {
         },
         wedding: {
           green: "#b9c2a6",
+          cream: "#FFF8E7",
+          beige: "#F5EFE0",
+          sand: "#E8DFC8",
+          olive: "#4A5445",
+          forest: "#2D3A29",
+          card: "#FAF3E2",
         },
       },
       borderRadius: {

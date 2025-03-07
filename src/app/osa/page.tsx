@@ -1,40 +1,43 @@
 import BackgroundFlower from "@/components/background-flower"
+import Description from "@/components/description"
 import Title from "@/components/title"
-import osaFlower from "../../../public/flowers/2.webp"
+import osaFlower from "../../../public/flowers/osa.webp"
 
 export default function OsaPage() {
   return (
-    <div className="container-wrapper">
-      <div className="flex container flex-col space-y-4 sm:space-y-8 justify-center items-center max-w-2xl">
-        <BackgroundFlower src={osaFlower} />
-        <Title>OSA</Title>
-        <p className="text-xl font-medium">
-          Följ länken nedan till Google-formuläret och svara så noggrant du kan
-          på alla frågor.
-        </p>
-        <ul className="flex flex-col z-10 gap-2 list-disc font-medium text-xl">
-          <li>Varje enskild gäst måste fylla i sitt eget OSA-formulär.</li>
-          <li>
-            OSA <span className="font-bold">senast 25 mars.</span>
-          </li>
-          <li>
-            Enbart personer som fått en personlig inbjudan med sitt namn på ska
-            OSA.
-          </li>
-          <li>
-            Alltså, man får <span className="font-bold">inte</span> ta med t.ex
-            en partner om hen inte är skriftligen inbjuden.
-          </li>
-        </ul>
-        <a
-          href="https://1177.se"
-          target="_blank"
-          rel="noreferrer"
-          className="text-2xl z-10 font-semibold hover:underline underline-offset-4 text-center"
-        >
-          Klicka här för att komma till formuläret!
-        </a>
+    <>
+      <BackgroundFlower src={osaFlower} />
+      <div className="container">
+        <Title className="mb-0 md:mb-8">OSA</Title>
+        <Description>
+          Följ länken nedan till Google-formuläret för att besvara inbjudan.
+        </Description>
+        <div className="grid items-center place-items-center gap-8 md:gap-16">
+          <ul className="z-10 space-y-2 list-disc text-lg md:text-xl">
+            <li>Varje enskild gäst måste fylla i sitt eget formulär.</li>
+            <li>
+              Svar anbehålles <span className="font-bold">senast 1 juni</span>,
+              men gärna tidigare.
+            </li>
+            <li>
+              Enbart personer som fått en personlig inbjudan med sitt namn på
+              kuvertet bör svara.
+            </li>
+            <li>
+              Alltså kan ni tyvärr <span className="font-bold">inte</span> inte
+              ta med exempelvis en partner om hen inte är skriftligen inbjuden.
+            </li>
+          </ul>
+          <a
+            href="https://docs.google.com/forms/d/e/1FAIpQLSeZL-VDGDh-7PmT0ObMl3AIZ_tJ-NW5lOof2R_2kEzfqxiA5g/viewform?usp=sharing"
+            target="_blank"
+            rel="noreferrer"
+            className="text-xl md:text-2xl z-10 font-semibold hover:underline underline-offset-4 text-center"
+          >
+            Klicka här för att komma till formuläret!
+          </a>
+        </div>
       </div>
-    </div>
+    </>
   )
 }

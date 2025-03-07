@@ -1,8 +1,6 @@
 export const siteConfig = {
-  name: "HD25",
-  url: "https://hd25.se",
+  name: "Hanna & David 2025",
+  url: "https://hd25.vercel.app/",
   ogImage: "",
-  description: "HD25",
+  description: "Hanna & David 2025",
 }
-
-export type SiteConfig = typeof siteConfig
