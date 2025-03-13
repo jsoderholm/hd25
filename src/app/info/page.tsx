@@ -47,9 +47,8 @@ export default function InfoPage() {
             </a>
           </InfoCard>
           <InfoCard title="Barn?">
-            Barnen är välkomna på vår vigsel, men middag och fest vill vi fira i
-            vuxet sällskap. Spädbarn som fortfarande ammar är givetvis ett
-            undantag.
+            Under denna dag önskar vi att barnen får stanna hemma med en
+            barnvakt.
           </InfoCard>
           <InfoCard
             title="Transport"
