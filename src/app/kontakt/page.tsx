@@ -59,7 +59,7 @@ export default function ContactPage() {
           >
             <p>
               En god vän till både David och Hanna. En av alla lärare här, grym
-              på BJ, Davids bästa sambo någonsin. En av de fyra inofficiella
+              på BJJ, Davids bästa sambo någonsin. En av de fyra inofficiella
               marskalkerna.
             </p>
             <a
