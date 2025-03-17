@@ -22,11 +22,11 @@ export default function AccomodationPage() {
           boenden i olika prisklasser och lägen.
         </Description>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          <Card className="bg-wedding-card z-10 border-wedding-sand">
+          <Card className="bg-wedding-card flex flex-col z-10 border-wedding-sand">
             <CardHeader>
               <CardTitle>Boende nära kyrkan</CardTitle>
             </CardHeader>
-            <CardContent className="text-lg">
+            <CardContent className="text-lg flex-1">
               <ul>
                 <li className="font-semibold">
                   Gammelstads Gästhem:
@@ -51,11 +51,11 @@ export default function AccomodationPage() {
               </p>
             </CardFooter>
           </Card>
-          <Card className="bg-wedding-card z-10 border-wedding-sand">
+          <Card className="bg-wedding-card flex flex-col z-10 border-wedding-sand">
             <CardHeader>
               <CardTitle>Boende vid älven</CardTitle>
             </CardHeader>
-            <CardContent className="text-lg">
+            <CardContent className="text-lg flex-1">
               <ul>
                 <li className="font-semibold">
                   Örnviken Hotell:
