@@ -16,7 +16,7 @@ export default function OsaPage() {
           <ul className="z-10 space-y-2 list-disc text-lg md:text-xl">
             <li>Varje enskild gäst måste fylla i sitt eget formulär.</li>
             <li>
-              Svar anbehålles <span className="font-bold">senast 1 juni</span>,
+              Svar anbehålles <span className="font-bold">senast 31 maj</span>,
               men gärna tidigare.
             </li>
             <li>
