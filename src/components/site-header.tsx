@@ -37,6 +37,15 @@ export function SiteHeader() {
               Viktig Information
             </Link>
             <Link
+              href="/onskelista"
+              className={cn(
+                "text-lg transition-colors hover:text-foreground hover:bg-wedding-green/20 py-1 px-2 rounded-md",
+                isActive("/onskelista") && "bg-wedding-green/20",
+              )}
+            >
+              Önskelista
+            </Link>
+            <Link
               href="/boende"
               className={cn(
                 "text-lg transition-colors hover:text-foreground hover:bg-wedding-green/20 py-1 px-2 rounded-md",

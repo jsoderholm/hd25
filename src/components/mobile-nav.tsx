@@ -7,6 +7,7 @@ import boendeFlower from "../../public/flowers/boende.webp"
 import infoFlower from "../../public/flowers/info.webp"
 import kontaktFlower from "../../public/flowers/kontakt.webp"
 import osaFlower from "../../public/flowers/osa.webp"
+import onskelistaFlower from "../../public/flowers/root.webp"
 import MobileNavItem from "./mobile-nav-item"
 import { Sheet, SheetContent, SheetHeader, SheetTrigger } from "./ui/sheet"
 
@@ -19,7 +20,10 @@ function MobileNav() {
         <PanelRight />
         <span className="sr-only">Öppna meny</span>
       </SheetTrigger>
-      <SheetContent side="left" className="flex flex-col items-center gap-8">
+      <SheetContent
+        side="left"
+        className="flex flex-col items-center gap-8 overflow-y-auto"
+      >
         <SheetHeader>
           <Link
             href="/"
@@ -41,6 +45,12 @@ function MobileNav() {
             src={infoFlower}
             title="Viktig Info"
             href="/info"
+            handleClick={() => onOpenChange(false)}
+          />
+          <MobileNavItem
+            src={onskelistaFlower}
+            title="Önskelista"
+            href="/onskelista"
             handleClick={() => onOpenChange(false)}
           />
           <MobileNavItem
